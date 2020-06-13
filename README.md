@@ -1,6 +1,13 @@
-# unimib_masterbi_2020
-University of Milano Bicocca - Master BI &amp; Big Data Analytics 2020
+# University of Milano Bicocca - Master BI &amp; Big Data Analytics 2020
 
+This repository contains the material, datasets and notebooks used during the 2020 edition of the **Master BI & Big Data Analytics** @ University of Milano Bicocca.
+
+In particular, the material covers the course of *Big Data Architecture* and *Big Data processing*.
+
+The repository is so organized:
+- [notebooks](https://github.com/mauropelucchi/unimib_masterbi_2020/tree/master/notebooks): notebooks used during the course (scraping, spark, ...)
+- [datasets](https://github.com/mauropelucchi/unimib_masterbi_2020/tree/master/datasets): example datasets useful and ready for data processing exercises
+- [scripts](https://github.com/mauropelucchi/unimib_masterbi_2020/tree/master/scripts): useful scripts of various types
 
 
 
