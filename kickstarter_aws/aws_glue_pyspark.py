@@ -64,7 +64,7 @@ img_dataset = spark.read.option("header","true").csv(img_dataset_path)
 # CREATE THE AGGREGATE MODEL, ADD TAGS TO TEDX_DATASET
 img_dataset_agg = img_dataset.groupBy(col("project_id").alias("project_id_ref")).agg(collect_list("name").alias("names"))
 img_dataset_agg.printSchema()
-projects_dataset_agg = projects_dataset.join(img_dataset_agg, projects_dataset.idx == img_dataset_agg.project_id_ref, "left") \
+projects_dataset_agg = projects_dataset.join(img_dataset_agg, projects_dataset.project_id == img_dataset_agg.project_id_ref, "left") \
     .drop("project_id_ref")
 
 projects_dataset_agg.printSchema()
