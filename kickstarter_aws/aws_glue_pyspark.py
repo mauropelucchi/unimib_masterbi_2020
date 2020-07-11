@@ -69,4 +69,4 @@ projects_dataset_agg = projects_dataset.join(img_dataset_agg, projects_dataset.p
 
 projects_dataset_agg.printSchema()
 
-projects_dataset_agg.write.option("compression", "snappy").mode("override").partquet("s3://unimib-dwh-2020/projects_dataset.out")
+projects_dataset_agg.write.option("compression", "snappy").mode("overwrite").partquet("s3://unimib-dwh-2020/projects_dataset.out")
